@@ -11,7 +11,7 @@ return { -- Mason for managing external tools
 		config = function()
 			local masonlsp = require("mason-lspconfig")
 			masonlsp.setup({
-				ensure_installed = { "lua_ls", "tsserver", "pyright" },
+				ensure_installed = { "lua_ls", "pyright" },
 			})
 		end,
 	},
