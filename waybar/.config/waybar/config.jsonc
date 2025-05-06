@@ -1,5 +1,8 @@
 {
 	"layer": "top",
+	"margin-top": 16,
+	"margin-left": 16,
+	"margin-right": 16,
 	"modules-left": [
 		"hyprland/workspaces",
 		"hyprland/submap"
@@ -8,17 +11,21 @@
 		"wlr/taskbar"
 	],
 	"modules-right": [
-		"load",
-		"temperature",
 		"pulseaudio",
 		"battery",
 		"clock"
 	],
-	"sway/window": {
-		"max-length": 50
-	},
 	"battery": {
+		"states": {
+			// "good": 95,
+			"warning": 30,
+			"critical": 15
+		},
 		"format": "{capacity}% {icon}",
+		"format-full": "{capacity}% {icon}",
+		"format-charging": "{capacity}% ",
+		"format-plugged": "{capacity}% ",
+		"format-alt": "{time} {icon}",
 		"format-icons": [
 			"",
 			"",
@@ -28,6 +35,7 @@
 		]
 	},
 	"clock": {
-		"format-alt": "{:%a, %d. %b  %H:%M}"
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%Y-%m-%d}"
 	}
 }
