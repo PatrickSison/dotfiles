@@ -7,9 +7,13 @@ import = [
 
 padding.x = 16
 padding.y = 16
-#opacity = 0.8
+opacity = 0.95
 #blur = true
 
 [font]
 
 #size = 16
+
+#[terminal.shell]
+#program = "/usr/bin/tmux"
+#args = ["new-session", "-A", "-s", "main"]
