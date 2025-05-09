@@ -2,9 +2,7 @@ return { -- Mason for managing external tools
 	{
 		"williamboman/mason.nvim",
 		build = ":MasonUpdate",
-		config = function()
-			require("mason").setup()
-		end,
+		config = true,
 	}, -- Mason-lspconfig for LSP integration
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -13,12 +11,15 @@ return { -- Mason for managing external tools
 			local masonlsp = require("mason-lspconfig")
 			masonlsp.setup({
 				ensure_installed = {
+					"ts_ls",
 					"lua_ls",
 					"pyright",
 					"eslint",
 					"cssls",
 					"jsonls",
 					"ast_grep",
+					"rust_analyzer",
+					"gopls",
 				},
 			})
 		end,

@@ -21,9 +21,11 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			python = { "isort", "black" },
-			javascript = { "prettierd", "prettier", stop_after_first = true },
-			json = { "prettier" },
-			typescript = { "prettier" },
+			javascript = { "prettierd", stop_after_first = true },
+			javascriptreact = { "prettierd" },
+			json = { "prettierd" },
+			typescript = { "prettierd" },
+			typescriptreact = { "prettierd" },
 		},
 		-- Set default options
 		default_format_opts = {

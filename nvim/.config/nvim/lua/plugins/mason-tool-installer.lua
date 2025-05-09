@@ -7,9 +7,11 @@ return {
 				ensure_installed = {
 					"lua-language-server",
 					"stylua", -- Add StyLua here
+					"black",
+					"isort",
 					"cssls",
 					"eslint_d",
-					"prettier",
+					"prettierd",
 					"shellcheck",
 				},
 				auto_update = true,

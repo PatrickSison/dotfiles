@@ -8,6 +8,10 @@ vim.opt.signcolumn = "yes"
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 
+-- show whitespace characters
+vim.opt.list = true
+vim.opt.listchars = { tab = "» ", trail = ".", nbsp = "~" }
+
 -- searches ignore case unless includes 1 or more capital letters
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
