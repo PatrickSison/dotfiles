@@ -16,4 +16,4 @@ opacity = 0.95
 
 #[terminal.shell]
 #program = "/usr/bin/tmux"
-#args = ["new-session", "-A", "-s", "Hyprland"]
+#args = ["new-session", "-A", "-s", "Hyprland", "\;", "new-window"]
