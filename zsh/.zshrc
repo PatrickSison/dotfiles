@@ -1,3 +1,9 @@
+#if [[ -z "$TMUX" ]]; then
+#	# Try to attach to 'hyprland' or 'main', or create one if it doesn't exist
+#   tmux attach-session -t main \; new-window 2>/dev/null || \
+#    tmux new-session -s main \; new-window
+#fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
