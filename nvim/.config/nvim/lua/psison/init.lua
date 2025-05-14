@@ -24,6 +24,7 @@ vim.opt.scrolloff = 8
 
 -- misc
 vim.lsp.inlay_hint.enable()
+vim.diagnostic.config({ virtual_lines = true })
 
 -- style
 vim.api.nvim_set_hl(0, "Normal", { bg = nil })
