@@ -5,8 +5,8 @@ import = [
 
 [window]
 
-padding.x = 16
-padding.y = 16
+#padding.x = 16
+#padding.y = 16
 opacity = 0.95
 #blur = true
 
