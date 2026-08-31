@@ -14,6 +14,6 @@ opacity = 0.95
 
 #size = 16
 
-[terminal.shell]
-program = "/usr/bin/tmux"
-args = ["new-session", "-A", "-D", "-s", "main"]
+#[terminal.shell]
+#program = "/usr/bin/tmux"
+#args = ["new-session", "-A", "-D", "-s", "main"]
